@@ -1,24 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template</title>
+    <title>Online shop</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+
     <link rel="stylesheet" href="./css/main.css">
 
 </head>
+
 <body>
+
+
+
     <header class="site-header">
         <div class="container">
+            <div class="index-header-box">
+                <div class="site-logo_box">
+                    <a class="site-logo-link" href="index.html">
+                        <img class="site-logo" src="/images/peru-nuevo-sol-currency-symbol.png" width="50" height="50"
+                            alt="Site logo">
+                        <p class="site-lgo-text">
+                            oes
+                        </p>
+                    </a>
+                </div>
 
+                <div>
+                    <nav class="ind-nav">
+                        <ul class="ind-nav__list">
+                            <li class="ind-na__item">
+                                <a class="ind-nav__link" href="/index.html">
+                                    First page
+                                </a>
+                            </li>
+                            <li class="ind-na__item">
+                                <a class="ind-nav__link" href="">
+                                    Theced page
+                                </a>
+                            </li>
+                            <li class="ind-na__item">
+                                <a class="ind-nav__link" href="">
+                                    Third page
+                                </a>
+                            </li>
+                            <li class="ind-na__item">
+                                <a class="ind-nav__link" href="">
+                                    Fourth page
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div>
+                    <a class="link-users" href="/order.html">
+                        ORDER
+                    </a>
+                    <a class="link-users" href="admin.html">
+                        ADMIN
+                    </a>
+                </div>
+            </div>
         </div>
     </header>
 
-    <main class="site-main">
-        <section class="hero">
-            <div class="container">
 
+    
+
+
+
+    <main class="site-main">
+        <section class="hero hero-ind">
+            <div class="container">
+                <div class="d-flex gap-5">
+                    <div>
+                        <details class="how-detils">
+                            <summary  class="how-right-top-select ind-nav__link">
+                                What type of coffee?
+                            </summary>
+                           <div  class="how-details d-flex flex-column">
+                            <label class="how-label">
+                                <input class="how-input" type="radio" name="box_coffee-what" aria-label="Single Origin" required >
+                                <span class="how-right-radio-box how-right-radio-box-second">
+                                    <span class="how-right-radio-title how-right-radio-title-secand-box">
+                                        Single Origin
+                                    </span>
+                                    <span class="how-right-radio-text how-right-radio-text-secand-box">
+                                        Distinct, high quality coffee 
+                                    </span>
+                                </span>
+                            </label>
+
+                            <label class="how-label">
+                                <input class="how-input" type="radio" name="box_coffee-what" aria-label="Decaf" required>
+                                <span class="how-right-radio-box how-right-radio-box-second">
+                                    <span class="how-right-radio-title how-right-radio-title-secand-box">
+                                        Decaf
+                                    </span>
+                                    <span class="how-right-radio-text how-right-radio-text-secand-box">
+                                        Just like regular coffee, except the 
+                                    </span>
+                                </span>
+                            </label>
+
+
+                            <label class="how-label">
+                                <input class="how-input" type="radio" name="box_coffee-what" aria-label="Blended" required>
+                                <span class="how-right-radio-box how-right-radio-box-second">
+                                    <span class="how-right-radio-title how-right-radio-title-secand-box">
+                                        Blended
+                                    </span>
+                                    <span class="how-right-radio-text how-right-radio-text-secand-box">
+                                        Combination of two or three dark
+                                    </span>
+                                </span>
+                            </label>
+ 
+                           </div>
+                        </details>
+
+
+                        <details class="how-detils">
+                            <summary  class="how-right-top-select  ind-nav__link">
+                                How much would you like?
+                            </summary>
+                           <div  class="how-details">
+
+                            <label class="how-label">
+                                <input class="how-input" type="radio" name="box_coffee-how-much" aria-label="250g" required >
+                                <span class="how-right-radio-box how-right-radio-box-second">
+                                    <span class="how-right-radio-title  how-right-radio-title-secand-box">
+                                        250g
+                                    </span>
+                                    <span class="how-right-radio-text how-right-radio-text-secand-box">
+                                        Perfect for the solo drinker. Yields about 12 
+                                    </span>
+                                </span>
+                            </label>
+                            <label class="how-label">
+                                <input class="how-input" type="radio" name="box_coffee-how-much" aria-label="500g"  required>
+                                <span class="how-right-radio-box how-right-radio-box-second">
+                                    <span class="how-right-radio-title how-right-radio-title-secand-box">
+                                        500g
+                                    </span>
+                                    <span class="how-right-radio-text how-right-radio-text-secand-box">
+                                        Perfect option for a couple. Yields about 40 
+                                    </span>
+                                </span>
+                            </label>
+
+
+                            <label class="how-label">
+                                <input class="how-input" type="radio" name="box_coffee-how-much" aria-label="1000g"  required>
+                                <span class="how-right-radio-box how-right-radio-box-second">
+                                    <span class="how-right-radio-title how-right-radio-title-secand-box">
+                                        1000g
+                                    </span>
+                                    <span class="how-right-radio-text how-right-radio-text-secand-box">
+                                        Perfect for offices and events. Yields about 90
+                                    </span>
+                                </span>
+                            </label>
+ 
+                           </div>
+                        </details>
+                       
+                        <details class="how-detils">
+                            <summary  class="how-right-top-select  ind-nav__link">
+                                Want us to grind them?
+                            </summary>
+                           <div  class="how-details">
+
+
+                            <label class="how-label">
+                                <input class="how-input" type="radio" name="box_coffee" aria-label="Wholebean" required>
+                                <span class="how-right-radio-box how-right-radio-box-second">
+                                    <span class="how-right-radio-title how-right-radio-title-secand-box">
+                                        Wholebean
+                                    </span>
+                                    <span class="how-right-radio-text how-right-radio-text-secand-box">
+                                        Best choice if you cherish the full 
+                                    </span>
+                                </span>
+                            </label>
+
+
+                            <label class="how-label">
+                                <input class="how-input" type="radio" name="box_coffee" aria-label="Filter" required>
+                                <span class="how-right-radio-box how-right-radio-box-second">
+                                    <span class="how-right-radio-title how-right-radio-title-secand-box">
+                                        Filter
+                                    </span>
+                                    <span class="how-right-radio-text how-right-radio-text-secand-box">
+                                        For drip or pour-over coffee methods
+                                    </span>
+                                </span>
+                            </label>
+
+                            <label class="how-label">
+                                <input class="how-input" type="radio" name="box_coffee" aria-label="Cafetiére" required >
+                                <span class="how-right-radio-box how-right-radio-box-second">
+                                    <span class="how-right-radio-title how-right-radio-title-secand-box">
+                                        Cafetiére
+                                    </span>
+                                    <span class="how-right-radio-text how-right-radio-text-secand-box">
+                                        Course ground beans specially suited for
+                                    </span>
+                                </span>
+                            </label>
+
+
+
+ 
+                           </div>
+                        </details>
+                    </div>
+                    <ul class="list-unstyled d-flex  flex-wrap justify-content-center gap-2 res-list">
+                     
+                        
+                    </ul>
+                </div>
             </div>
         </section>
     </main>
@@ -28,5 +233,42 @@
 
         </div>
     </footer>
+
+   
+
+    <template class="ind-templata">
+        <li class="d-inline-block border ">
+            <div>
+
+                <div class="p-3 img-box">
+                    <img class="product-img" src="images/black-jordan.png" width="400" height="600" alt="">
+                </div>
+
+                <div class="d-flex justify-content-between w-100 p-2 ">
+                    <div>
+                        <p class="product-name m-0">
+                            Air Jordan 11 Retro
+                        </p>
+                        <p class="product-desc m-0">
+                            Men's Shoes
+                        </p>
+                        <p class="product-sum m-0">
+                            $225
+                        </p>
+                    </div>
+
+                    <button class="btn btn-outline-dark btn-ind">
+                        save
+                    </button>
+                </div>
+
+
+            </div>
+        </li>
+    </template>
+    <script src="/js/keys.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
+
 </html>

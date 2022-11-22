@@ -25,6 +25,7 @@ body{
   height: 100%;
   margin: 0;
   padding: 0;
+  background-color: #f8f8f8;
   /* font-family: "Roboto", "Arial", sans-serif; */
   /* font-size: 16px; */
   /* font-weight: 400; */
@@ -33,5 +34,72 @@ body{
 
 /* STICKY-FOOTER */
 .site-main{
+
   flex-grow: 1;
+}
+
+.body-img{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  background-color: #fff;
+  background-image: url("/images/wallpaperbetter-light.jpg");
+  background-size: cover;
+  background-position: calc(50% + 0px);
+  background-repeat: no-repeat;
+
+  .body-blur{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+  }
+}
+
+.body-img-order{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  background-color: #fff;
+  background-image: url("/images/wallpaperbetter.jpg");
+  background-size: cover;
+  background-position: calc(50% + 0px);
+  background-repeat: no-repeat;
+
+  .body-blur-order{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    backdrop-filter: blur(10px);
+  }
+}
+
+.body-img-reg{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  background-color: #fff;
+  background-image: url("/images/wallpaperbetter-darl.jpg");
+  background-size: cover;
+  background-position: calc(50% + 0px);
+  background-repeat: no-repeat;
+
+  .body-blur-reg{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    backdrop-filter: blur(10px);
+
+  }
 }

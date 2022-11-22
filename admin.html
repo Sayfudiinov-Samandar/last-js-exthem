@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online shop</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="./css/main.css">
+
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container">
+
+            <header class="site-header">
+                <div class="container">
+                    <div class="index-header-box">
+                        <div class="site-logo_box">
+                            <a class="site-logo-link" href="index.html">
+                                <img class="site-logo" src="/images/peru-nuevo-sol-currency-symbol.png" width="50"
+                                    height="50" alt="Site logo">
+                                <p class="site-lgo-text">
+                                    oes
+                                </p>
+                            </a>
+                        </div>
+
+                        <div>
+                            <nav class="ind-nav">
+                                <ul class="ind-nav__list">
+                                    <li class="ind-na__item">
+                                        <a class="ind-nav__link" href="/index.html">
+                                            First page
+                                        </a>
+                                    </li>
+                                    <li class="ind-na__item">
+                                        <a class="ind-nav__link" href="">
+                                            Theced page
+                                        </a>
+                                    </li>
+                                    <li class="ind-na__item">
+                                        <a class="ind-nav__link" href="">
+                                            Third page
+                                        </a>
+                                    </li>
+                                    <li class="ind-na__item">
+                                        <a class="ind-nav__link" href="">
+                                            Fourth page
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <div>
+                            <a class="link-users  " href="/order.html">
+                                ORDER
+                            </a>
+                            <a class="link-users border-2 border-bottom
+                            " href="admin.html">
+                                ADMIN
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+    </header>
+
+    <main class="site-main">
+        <section class="hero">
+            <div class="container">
+                <button class="btn btn-danger mt-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Add product</button>
+
+                <ul class="praduct-list list  d-flex flex-wrap list-unstyled justify-content-center gap-3 pt-5">
+                    <strong>
+
+                        Product is
+
+                    </strong>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+
+        </div>
+    </footer>
+
+
+
+    <template class="list-teplate">
+        <li class="d-inline-block border ">
+            <div>
+
+                <div class="p-3 img-box">
+                    <img class="list__item-img" src="images/black-jordan.png" width="400" height="600" alt="">
+                </div>
+
+                <div class="d-flex justify-content-between w-100 p-2 ">
+                    <div>
+                        <p class="list__item-name m-0">
+                            Air Jordan 11 Retro
+                        </p>
+                        <p class="product-desc m-0">
+                            Men's Shoes
+                        </p>
+                        <p class="product-sum m-0">
+                            $225
+                        </p>
+                    </div>
+                    <div class="mt-auto">
+                        <button type="button" class="list__item-edit btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Edit
+                          </button>
+    
+                        <button class="list__item-delete btn  btn-warning">
+                            Delete
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </template>
+
+
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+        aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">For admin</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <h2>Praduct Add</h2>
+            <form class="praduct-form gap-3 d-flex flex-column">
+                <input class="praduct-input__name form-control" type="text" name="user_praduct_name"
+                    placeholder="Praduck name:">
+                <input class="praduct-input__desc form-control" type="text" name="user_praduct_desc"
+                    placeholder="Praduck description:">
+
+                <label class="custom-file-upload" id="largeFile">
+                    <input class="praduct-input__img form-control" type="file" name="user_praduct_img">
+                    <p class="input-flie">
+                        Uploud you file
+                    </p>
+                </label>
+
+
+                <input class="praduct-input__price form-control" type="number" name="user_praduct_prace"
+                    placeholder="Product Price:">
+                <button class="todo-button btn btn-warning mt-3"  data-bs-dismiss="offcanvas" type="submit">Add</button>
+            </form>
+    
+        </div>
+    </div>
+
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Edit product</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div>
+
+                        <form class="praduct-form edit-form gap-3 d-flex flex-column">
+                            <input class="praduct-input__name form-control edit-name" type="text" name="user_praduct_name"
+                                placeholder="Praduck name:">
+                            <input class="praduct-input__desc form-control edit-desc" type="text" name="user_praduct_desc"
+                                placeholder="Praduck description:">
+            
+                            <label class="custom-file-upload" id="largeFile">
+                                <input class="praduct-input__img form-control edit-file" type="file" name="user_praduct_img">
+                                <p class="input-flie">
+                                    Uploud you file
+                                </p>
+                            </label>
+                            <input class="praduct-input__price form-control edit-sum" type="number" name="user_praduct_prace"
+                                placeholder="Product Price:">
+                            <button class="todo-button btn btn-warning mt-3" data-bs-dismiss="modal" type="submit">Edit</button>
+                        </form>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/keys.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/admin.js"></script>
+</body>
+
+</html>
