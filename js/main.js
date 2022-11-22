@@ -21,6 +21,11 @@ async function getDefaout() {
 
 }
 
+if (!tokenRegistor) {
+    window.location.pathname = "registor.html";
+}
+
+
 async function postOrder(id) {
     const formData=new FormData()
     formData.append('product_id', id)
@@ -41,9 +46,7 @@ async function postOrder(id) {
     }
 }
 
-if (!tokenLogin && tokenRegistor) {
-    window.location.pathname = "registor.html";
-}
+
 
 
 function makeList(array) {

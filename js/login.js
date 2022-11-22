@@ -38,6 +38,10 @@ async function login(){
 }
 
 
+if (!tokenRegistor) {
+  window.location.pathname = "registor.html";
+}
+
 elForm.addEventListener("submit", (evt)=>{
   evt.preventDefault();
 
